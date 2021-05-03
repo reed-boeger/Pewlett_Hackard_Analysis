@@ -54,3 +54,10 @@ INNER JOIN titles as ti
 ON (e.emp_no = ti.emp_no)
 WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY e.emp_no;
+
+-- Deliverable 3 -- 
+SELECT COUNT(ut.emp_no)
+FROM unique_titles as ut
+
+SELECT COUNT (me.emp_no)
+FROM mentorship_elegibility as me
